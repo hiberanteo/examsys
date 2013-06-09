@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping 
+			PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.sanqing.po.Score" table="tb_score"><!-- 每个class对应一个持久化对象 -->
+		<id name="id"><!-- id元素用来定义主键标识,并指定主键生成策略 -->
+			<generator class="identity"></generator>
+		</id>
+		<property name="stuId"></property>	<!-- 映射subjectTitle属性 -->
+		<property name="stuName"></property>
+		<property name="typeId"></property>
+		<property name="typeName"></property>	<!-- 映射subjectOptionA属性 -->
+		<property name="result"></property>	<!-- 映射subjectOptionB属性 -->
+	</class>	
+</hibernate-mapping>
